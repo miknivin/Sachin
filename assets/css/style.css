@@ -1,0 +1,260 @@
+*{ font-family: 'Lato', sans-serif;
+}
+body{
+    width:100% ;
+    overflow-x: hidden;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+width: 50px;
+ height: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+nav ul li{
+    font-size: 16px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 30px;
+    color: aliceblue;
+}
+
+nav ul li a:hover{
+    color: teal;
+    text-shadow: 2px 5px 5px;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0,0.55)),url('https://storage.googleapis.com/msgsndr/Cr1silMbhtdiaPg50Yb1/media/644ebae6d4bd9badb97136cb.webp');
+    background-size: cover;
+    background-position: 0%;
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding: 50px 30px ;
+    overflow: hidden;
+}
+
+.heading{
+    font-size: 65px;
+    font-weight: 700;
+    width: 65%;
+    padding-left: 50px;
+}
+
+.sub-text{
+    padding-left: 50px;
+    font-size: 32px;
+    width: 60%;
+}
+
+.hero-btn{
+    margin-left: 50px;
+    padding: 15px 40px;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hero-btn:hover{
+    background-color: #0f7c90;
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.sub-heads{
+    text-align: center;
+} 
+#about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-div{
+    width: 90%;
+    text-align: center;
+    border: 2px dashed #000;
+    padding:10px 20px;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+.content::first-letter{
+    font-size: 40px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:fit-content ;
+    flex-wrap: wrap;
+    margin: 20px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all ease-out 0.5s;
+}
+.col:hover .book-cover{
+    scale: 1.03;
+}
+.book-cover{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: all ease-out 0.5s;
+}
+
+.col a{
+    width: 100%;
+}
+.book-title{
+    padding: 0 15px;
+}
+
+.about{
+    padding: 0 15px;
+    text-align: center;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 15px;
+}
+
+.author-img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.CTA{
+    width: 60%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Lato',sans-serif;
+    background-color: teal;
+    color: aliceblue;
+    transition: all ease-out 0.5s;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.CTA:hover{
+    background-color: darkturquoise;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+    background-color: black;
+    color: white;
+    
+}
+
+.column{
+    margin-top: 15px;
+}
+.column2{
+    padding: 0 40px;
+}
+.social-icon-one {
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  align-items: center;  
+}
+
+#wikipedia{
+    margin: 20px 50px;
+}
+    .social-icon-one li {
+      list-style-position: inside;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center; 
+      margin:5px;
+    }
+
+
+    .social-icon-one i {
+      color: teal;
+      background-color: #f0f9ff;
+      padding: 10px;
+      border-radius: 50px;
+      transition-property: all;
+      transition-duration: 200ms;
+      transition-timing-function: cubic-bezier(.55, .055, 0, 1.808);
+    }
+
+    /* Add a class name to the a element to make the styles more specific */
+    .social-icon-one i:hover {
+      color: white;
+      background-color: teal;
+      scale:1.05;
+    }
+
+    .logo img{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+    }
+
+    #about-me{
+        background-color: antiquewhite;
+        padding-bottom: 20px;    
+    }
+#books{
+    background-color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
